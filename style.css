@@ -184,6 +184,7 @@ nav{
     align-items: center;
     justify-content: center;
 }
+
 .first-section>div{
     width: 100%;
     height: 70%;
@@ -203,6 +204,11 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: slideUp 2s ease-in;
+}
+@keyframes slideUp {
+    0%{transform: translateY(40%);}
+    100%{transform: translateY(-20%);}
 }
 
 .first-section>div>div:first-child>h5{
@@ -238,6 +244,12 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 10%;
+    animation: slide-in-main 1.5s ease-in;
+}
+/* for animation */
+@keyframes slide-in-main{
+    from{transform: translateY(50%);}
+    to{transform: translateY(-20%);}
 }
 
 .first-section>div>div:last-child>div:nth-child(1){
@@ -372,6 +384,11 @@ nav{
     border-radius: 25px;
     box-shadow: 10px 10px 0 rgb(238, 47, 91);
     position: relative;
+    animation: slideUp 2s ease-in;
+}
+@keyframes slideUp {
+    0%{transform: translateY(40%);}
+    100%{transform: translateY(-20%);}
 }
 .second-section iframe {
     width: 99vw;
@@ -380,6 +397,7 @@ nav{
     position: absolute;
 
 }
+
 .second-section div{
     width: 100%;
     position: absolute;
@@ -439,6 +457,12 @@ nav{
     gap: 8%;
     justify-content: center;
     align-items: center;
+    animation: slideUp 2s ease-in;
+}
+
+@keyframes slideUp {
+    0%{transform: translateY(40%);}
+    100%{transform: translateY(-20%);}
 }
 .third-section>div>div:first-child {
     width: 100%;
@@ -1128,7 +1152,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(SmFest-images/sm-bg-1.jpeg);
+    background-image: url(SmFest-images/bggg.png);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 120px 0;
