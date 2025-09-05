@@ -175,9 +175,7 @@ nav{
      
 }
 @media screen and (max-width: 500px) {
-    header{
-        position: sticky;
-    }
+   
 }
 /* first section */
 .first-section {
@@ -306,13 +304,12 @@ nav{
 .first-section>div>div:last-child>div:nth-child(3){
     width: 100%;
     height: 100px;
-    padding-left: 20px;
     border-radius: 20px;
     background-color: rgb(248, 177, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
 }
 
 .first-section>div>div:last-child>div:nth-child(3) h3{
@@ -465,6 +462,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 10%;
 }
 .third-section>div {
     width: 80rem;
@@ -702,24 +700,24 @@ nav{
     font-weight: 400;
     color: rgb(238, 47, 91);
 }
-.section-four .content-{
+.content-{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 7%;
 }
-.section-four .content- h1 {
+.content- h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 60px;
     font-weight: 600;
     color: white;
 }
-.section-four .content- button {
+.content- button {
     font-family: serif;
     font-size: large;
     font-weight: bold;
     border: none;
-    width: 200px;
+    width: 200px !important;
     height: 40px;
     color: rgb(7, 0, 55);
     background-color: rgb(238, 47, 91);
@@ -944,7 +942,6 @@ nav{
 }
 
 
-
 /* section five */
 .section-five {
     width: 100%;
@@ -966,19 +963,19 @@ nav{
     font-weight: 400;
     color: rgb(238, 47, 91);
 }
-.section-five .content-{
+.content-{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 7%;
 }
-.section-five .content- h1 {
+.content- h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 60px;
     font-weight: 600;
     color: white;
 }
-.section-five .content- button {
+.content- button {
     font-family: serif;
     font-size: large;
     font-weight: bold;
@@ -1000,11 +997,18 @@ nav{
         width: 95%;
         padding: 10px;
     }
-    .section-five .content-{
+    .content-{
         flex-direction: column;
         justify-content: center;
         align-items: start;
         margin-bottom: 7%;
+    }
+    .content- button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 40px;
     }
     
 } 
@@ -1066,30 +1070,47 @@ nav{
     height: 41rem;
     border-radius: 10px;
 }
-/* for responsiveness */
+/* for section six responsiveness */
+@media screen and (min-width: 900px) {
+    .section-six br{
+        display: none;
+    }
+}
 @media screen and (max-width: 900px) {
+    .section-six br{
+        display: none;
+    }
     .section-six>div>div:first-child{
         width: 100%;
-        gap: 10px;
         padding-left: 10px;
-        text-align: start;
-    }
-    .section-six>div>div:first-child br{
-        display: none;
+        gap: 10px;
     }
    
 }
+
 @media screen and (max-width: 428px) {
     .section-six>div {
+        padding: 10px;
         display: grid;
         grid-template-columns: 1fr;
+        gap: 5%;
     }
     .section-six>div>div:first-child{
         order: 2;
+        justify-content: center;
+    }
+   
+    .section-six>div>div:first-child h3{
+        font-size: 20px;
     }
     .section-six>div>div:last-child{
         order: 1;
+        height: 30rem;
     }
+    .section-six>div>div:last-child img{
+        height: 30rem;
+    }
+
 }
   
 
@@ -1103,38 +1124,58 @@ nav{
 }
 .section-seven>div {
     width: 80rem;
-    height: 50rem;
-    margin-top: 10%;
+    height: 45rem;
     padding: 2.2%;
     border: 1px solid rgb(102, 54, 229);
     border-radius: 15px;
     box-shadow: 10px 10px 0 rgb(102, 54, 229);
 }
-.section-seven>div> h1 {
+.section-seven>div>div:nth-child(1) h1 {
     font-family: sans-serif;
     font-size: 60px;
     font-weight: 700;
     color: white;
 }
-.section-seven>div> h1::after {
+.section-seven>div>div:nth-child(1) h1::after {
     content: '';
     display: block;
     background-color: rgb(102, 54, 229);
     width: 100%;
     height: 2px;
 }
-
-/* for responsiveness */
-@media screen and (max-width: 1040px) {
+.section-seven>div>div:nth-child(2) {
+    padding: 50px 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    gap: 20px;
+}
+.section-seven>div>div:nth-child(2) div{
+    width: 100%;
+    height: 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, rgb(37, 19, 153) 30%,  #02115a 70%);
+    border-radius: 10px; 
    
 }
-@media screen and (max-width: 428px) {
-   
+
+.section-seven>div>div:nth-child(2) div img{
+    width: 80%;
 }
-  
-
-
-
+.section-seven>div>div:nth-child(3) button{
+    width: 170px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: bold;
+    padding-bottom: 5px;
+    background-color: rgb(102, 54, 229);
+    box-shadow: 5px 5px 0 white;
+}
 
 /* section eight */
 .section-eight {
@@ -1355,6 +1396,14 @@ nav{
     padding-top: 5%;
     gap: 15px;
 }
+/* @media screen and (max-width: 1026px) {
+    .section-ten>div {
+   display: flex;
+   flex-direction: column;
+    
+
+}
+} */
 .section-ten>div>h3{
     color: rgb(224, 44, 89);
     font-size: 17px;
@@ -1372,7 +1421,7 @@ nav{
 }
 .section-ten .left{
     padding: 20px;
-    width: 100%;
+    width: 80%;
     height: 43rem;
     background-color: rgb(0, 189, 255);
     border-radius: 10px;
@@ -1380,6 +1429,7 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-items: center;
 }
 .section-ten .left img{
     width: 550px;
@@ -1703,7 +1753,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 150px;
 }
+
+
 footer>div {
     width: 80rem;
     height: 45rem;
@@ -1719,6 +1772,15 @@ footer>div>.top{
     align-items: center;
     gap: 10px;
     padding: 120px 0 0 20px;
+}
+@media screen and (max-width: 500px) {
+    footer>div>.top{
+    width: 100%;
+    height: 70%;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 120px 0 0 20px;
+}
 }
 /* first part of the footer */
 footer .top>div:nth-child(1){
@@ -1816,6 +1878,11 @@ footer .bottom {
     flex-direction: column;
     justify-content: center;
     color: white;
+}
+@media screen and (max-width: 500px) {
+ footer .bottom {
+    margin-top: 500px;
+}   
 }
 footer .bottom>h1{
     font-size: 90px;
